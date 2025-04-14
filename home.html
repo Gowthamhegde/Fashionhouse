@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FashionHouse - Style Redefined</title>
+    <title>FashionHouse - Trendy & Unique Clothing</title>
     <link rel="stylesheet" href="home-styles.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -12,47 +11,71 @@
 <body>
     <nav class="navbar">
         <div class="nav-brand">Fashion<span>House</span></div>
-        <div class="nav-links">
-            <a href="#" class="active">Home</a>
-            <a href="#">Collections</a>
-            <a href="#">Trending</a>
-            <a href="#">Lookbook</a>
-            <a href="index.html" class="login-btn">Login</a>
+        <div class="nav-categories">
+            <a href="#men">Men</a>
+            <a href="#women">Women</a>
+            <a href="#accessories">Accessories</a>
+            <a href="#mobile-covers">Mobile Covers</a>
+        </div>
+        <div class="nav-actions">
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products">
+                <i class="fas fa-search"></i>
+            </div>
+            <a href="#wishlist" class="icon-btn"><i class="fas fa-heart"></i></a>
+            <a href="#cart" class="icon-btn"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+            <a href="#" class="login-btn">Login</a>
         </div>
     </nav>
 
-    <div class="hero">
-        <div class="hero-content">
-            <div class="avatar-container">
-                <div class="avatar">
-                    <div class="avatar-circle"></div>
-                    <img src="https://assets.codepen.io/1462889/fashion-avatar.png" alt="Fashion Avatar">
+    <div class="hero-slider">
+        <div class="slider-container">
+            <div class="slide">
+                <img src="assets/banner1.jpg" alt="New Collection">
+                <div class="slide-content">
+                    <h2>Summer Collection 2024</h2>
+                    <p>Up to 50% off on selected items</p>
+                    <button class="shop-now-btn">Shop Now</button>
                 </div>
             </div>
-            <h1 class="animated-title">Redefine Your Style</h1>
-            <p class="animated-text">Discover the latest trends in fashion and express yourself</p>
-            <div class="cta-container">
-                <button class="cta-button">Explore Collection</button>
-                <button class="cta-button secondary">Watch Showcase</button>
-            </div>
-        </div>
-        <div class="interactive-elements">
-            <div class="floating-card" data-tilt>
-                <i class="fas fa-tshirt"></i>
-                <h3>Premium Fashion</h3>
-            </div>
-            <div class="floating-card" data-tilt>
-                <i class="fas fa-star"></i>
-                <h3>Trending Styles</h3>
-            </div>
-            <div class="floating-card" data-tilt>
-                <i class="fas fa-gem"></i>
-                <h3>Luxury Brands</h3>
-            </div>
+            <!-- Add more slides here -->
         </div>
     </div>
 
-    <!-- Adding Login/Signup Modal -->
+    <section class="trending-categories">
+        <h2>Trending Categories</h2>
+        <div class="category-grid">
+            <div class="category-card" data-tilt>
+                <img src="assets/men.jpg" alt="Men's Fashion">
+                <h3>Men's Fashion</h3>
+            </div>
+            <div class="category-card" data-tilt>
+                <img src="assets/women.jpg" alt="Women's Fashion">
+                <h3>Women's Fashion</h3>
+            </div>
+            <!-- Add more categories -->
+        </div>
+    </section>
+
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <!-- Product cards will be dynamically added here -->
+        </div>
+    </section>
+
+    <section class="deals-section">
+        <h2>Today's Deals</h2>
+        <div class="deals-timer">
+            <span>Ends in: </span>
+            <div class="timer">12:00:00</div>
+        </div>
+        <div class="deals-grid">
+            <!-- Deal products will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- Auth Modal (your existing login/signup forms) -->
     <div class="auth-modal" id="authModal">
         <div class="background">
             <div class="shape"></div>
@@ -107,8 +130,38 @@
         </div>
     </div>
 
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#track-order">Track Order</a></li>
+                    <li><a href="#returns">Returns & Exchange</a></li>
+                    <li><a href="#shipping">Shipping</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="#terms">Terms & Conditions</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
     <script src="home-script.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>
